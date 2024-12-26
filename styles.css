@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  background-color: #336699;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.title-name {
+  text-align: center;
+  margin: 20px;
+}
+
+.title-name h1 {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.tab-selection {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 50px;
+}
+
+.gps-section {
+  text-align: center;
+}
+
+/* For Enable Location Services Text */
+.gps-section h1 {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.gps-section button {
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Animation for GPS icon */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.gps-icon {
+  animation: pulse 2s infinite;
+}
+
+.search-bar {
+  display: flex;
+  width: 300px; /* Adjust as needed */
+  border-radius: 50px; /* More rounded for a softer look */
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* White background for the entire bar */
+  margin: 20px auto; /* Center the bar */
+  border: 1px solid #ddd; /* Subtle border for better definition */
+}
+
+.search-input {
+  flex-grow: 1;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  outline: none;
+  background: transparent; /* No background, uses parent's background */
+  color: #333; /* Dark text for contrast */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.search-input:focus {
+  background: #f0f0f0; /* Light grey background on focus */
+  color: #000; /* Darker text on focus */
+}
+
+.search-button {
+  border: none;
+  background: linear-gradient(
+    135deg,
+    #3498db,
+    #2980b9
+  ); /* Gradient for the button */
+  padding: 0 30px;
+  cursor: pointer;
+  border-radius: 0 50px 50px 0;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for the button */
+}
+
+.search-button img {
+  width: 20px; /* Adjust icon size */
+  height: 20px;
+}
+
+.search-button:hover {
+  background: linear-gradient(
+    135deg,
+    #2980b9,
+    #1c6ea4
+  ); /* Darker gradient on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+::placeholder {
+  color: #b3b3b3;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #b3b3b3;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #b3b3b3;
+}
+
+.weather-info{
+  text-align: center;
+  color: white;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.weather-info {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.weather-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.weather-city {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.country-flag {
+  width: 40px;
+  height: 30px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.weather-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.weather-description {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.weather-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.weather-temp {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.weather-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.weather-detail {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.weather-detail img {
+  width: 24px;
+  height: 24px;
+}
